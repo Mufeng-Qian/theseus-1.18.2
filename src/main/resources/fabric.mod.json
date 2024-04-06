@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "theseus",
+	"version": "${version}",
+	"name": "theseus",
+	"description": "Is this a mod?",
+	"authors": ["棠溪芊凛","烨·星·影"],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/theseus/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": ["com.theseus.Theseus"],
+		"client": ["com.theseus.TheseusClient"],
+		"fabric-datagen": ["com.theseus.TheseusDataGenerator"]
+	},
+	"mixins": ["theseus.mixins.json"],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.18.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
